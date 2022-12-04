@@ -1,0 +1,165 @@
+:root {
+    --text-main-color:  #555555;
+    --text-title-color: #303030;
+    --text-white-color: #FFFFFF;
+    --text-grey-color: #9DA4BD;
+    --text-grey-sec-color: rgba(157, 164, 189, 0.6);
+
+    --bg-white-color: #FFFFFF;
+    --bg-white-sec-color: #F7F7F7;
+    --bg-dark-color: #191C26;
+
+    --accent-color: #FF6C00;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.2em;
+
+    color: var(--text-main-color);
+    background-color: var(--bg-white-color);
+}
+
+/* common */
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--text-title-color);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+
+    box-sizing: border-box;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    outline: 1px solid red; 
+}
+
+.section {
+    padding: 120px 0;
+}
+
+/* header */
+
+/* .wrap-bg-image {
+    background-color: var(--bg-dark-color);
+    background-image: url(../images/slider.jpg);
+    
+} */
+
+header {
+    background-color: grey;
+}
+
+header .container {
+    display: flex;
+
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-logo {
+  padding: 32px 0;
+  display: inline-block;
+  margin-right: 130px;
+}
+
+.header-nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-list li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.header-nav-list a {
+    color: var(--text-white-color);
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+}
+
+.header-wrap-right {
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+.header-tel {
+    color: var(--text-white-color);
+    
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+
+    margin-right: 40px;
+}
+
+.header-btn {
+    background-color: transparent;
+    color: var(--text-white-color);
+    border-radius: 25px;
+    border: 1px solid #FF6C00;
+    padding: 12px 20px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+
+}
+
