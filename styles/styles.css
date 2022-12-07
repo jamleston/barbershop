@@ -45,8 +45,11 @@ h4 {
 }
 
 p {
+    color: var(--text-main-color);
     margin-top: 0;
     margin-bottom: 0;
+
+    letter-spacing: inherit;
 }
 
 ul,
@@ -88,13 +91,6 @@ button {
 }
 
 /* header */
-
-/* .wrap-bg-image {
-    background-color: var(--bg-dark-color);
-    background-image: url(../images/slider.jpg);
-    
-} */
-
 
 header {
     background-color: grey;
@@ -160,7 +156,7 @@ header .container {
     color: var(--accent-color);
 }
 
-.header-btn {
+.btn {
     background-color: transparent;
     color: var(--text-white-color);
     border-radius: 25px;
@@ -173,10 +169,9 @@ header .container {
     letter-spacing: 0.09em;
 }
 
-.header-btn:hover,
-.header-btn:focus {
-    color: var(--accent-color);
-    border-color: var(--text-white-color);
+.btn:hover,
+.btn:focus {
+    background-color: var(--accent-color);
 }
 
 /* hero */
@@ -260,4 +255,83 @@ header .container {
 .hero-bottom-link:focus {
     color: var(--text-white-color);
     text-decoration: underline 1px var(--text-white-color);
+}
+
+/* about */
+
+.about .container {
+    display: flex;
+}
+
+.about-img-list {
+    display: flex;
+}
+
+.about-img-list li {
+    margin-right: 30px;
+}
+
+.about-text-box {
+    position: relative;
+
+    width: 470px;
+}
+
+.about-pretitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+.about-pretitle::before {
+    content: '';
+
+    width: 60px;
+    height: 1px;
+
+    background-color: var(--text-title-color);
+
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 7px;
+}
+
+.about-title {
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+
+    margin-bottom: 20px;
+}
+
+.about-visit-us {
+    font-size: 18px;
+    line-height: 1.67;
+
+    letter-spacing: 0.02em;
+
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-size: 14px;
+    line-height: 1.86;
+
+    letter-spacing: 0.02em;
+
+    margin-bottom: 42px;
+}
+
+.about .btn {
+    color: var(--text-title-color);
+}
+
+.about .btn:hover,
+.about .btn:focus {
+    color: var(--text-white-color);
 }
